@@ -1,0 +1,37 @@
+Assignment 2 [10 marks]
+Deadline: 30 Dec 2022
+
+* This assignment can be done in teams of 5 students or less.
+* Team members must be from the same lab so the TA can discuss all of them during one lab time.
+* Each team must come up with their own implementation.
+* Each student in the team must understand all details of the implementation.
+* The code must contain no more than 15,000 characters.
+* Your code must NOT include any TAB character. Convert each TAB to 4 spaces before submitting.
+* You are not allowed to copy any piece of code from the internet or from any other resource.
+* You are not allowed to copy any piece of code from other students.
+* You are not allowed to include any files or built-in libraries, except for the described ones.
+* Half the mark is dedicatd to comments explaining the code.
+* If you have issue regarding the assignment, contact the TA, not the doctor.
+* Get your submission on a flash drive and discuss your submission with the TA during the first lab after the deadline.
+* The TA will not tell you your mark. He will report his evaluation to me and I will make the final evaluation.
+* You are allowed to submit after the deadline with 10% mark-deduction for each late day.
+
+* Write a 32-bits intel-syntax assembly program that can be compiled in the same way the 32-bits lab samples are compiled.
+The program should take the following inputs from the user:
+* An integer n.
+* n floating point numbers (Use the "double" type. Do not use "float" type.)
+The program should output (1 + 1/1) + (2 + 1/4) + (3 + 1/9) + (4 + 1/16) + ... + (n + 1/(n^2)).
+Example:
+The user inputs: 3
+The program outputs: sum=7.361
+
+To submit the code:
+* Write your code in exactly one text file such as myfile.s.
+* Make sure that myfile.s contains the actual code, for example open it in Notepad.
+* Encode the file using the assign_encoder tool as the following:
+g++ -O3 -o assign_encoder.exe assign_encoder.cpp
+assign_encoder.exe ./myfile.s 2 3 20101111 20102222 20113333
+* The 2 in the above line is the assignment ID. The 3 in the above line is number of students.
+* Submit the resulting assign_2_20101111_20102222_20113333.bin file and do not submit the original myfile.s.
+* Do not change the name of the resulting file.
+* Do not compress the resulting file. Just send it exactly as it is.
