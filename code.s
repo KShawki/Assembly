@@ -54,8 +54,8 @@ _main:               # the label indicating the start of the program
 iteration:
   # the following instruction to add the total sum
   fld     qword ptr t         # push t to the floating point stack
-  fadd    qword ptr sum
-  fstp    qword ptr sum
+  fadd    qword ptr s
+  fstp    qword ptr s
   mov     edx, dword [t]
   mov     dword [r], edx
   
